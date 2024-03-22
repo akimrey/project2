@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "project2"
+version = "0.1.0"
+description = "My SE project2"
+authors = ["akimrey <akimrey@unca.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.7"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
