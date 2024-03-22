@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "project2"
 version = "0.1.0"
-description = "My SE project2"
+description = "Software Engineering project regarding giphys and APIkeys"
 authors = ["akimrey <akimrey@unca.edu>"]
 readme = "README.md"
 
