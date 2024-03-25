@@ -15,8 +15,4 @@ def fetch_data(api_key):
         # Return a message or handle errors as needed
         return {"error": "Failed to fetch data", "status_code": response.status_code}
 
-# Example usage
-if __name__ == "__main__":
-    api_key = "https://api.giphy.com/v1/gifs/trending?api_key=fwmPVjyOZsVvHGKarGwKb81LeaQOFqga&limit=25&offset=0&rating=g" 
-    data = fetch_data(api_key)
-    print(data)
+
