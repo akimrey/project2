@@ -1,5 +1,3 @@
-import requests
-
 def fetch_data(api_key):
     # Construct the URL with the provided API key
     url = f"https://api.example.com/data?api_key={api_key}"
