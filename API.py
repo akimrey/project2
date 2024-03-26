@@ -14,3 +14,4 @@ def fetch_data(api_key):
     else:
         # Return a message or handle errors as needed
         return {"error": "Failed to fetch data", "status_code": response.status_code}
+
