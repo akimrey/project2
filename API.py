@@ -1,13 +1,16 @@
 import requests
 
-def fetch_trending_gifs():
-    response = requests.get(api_url)
-    if response.status_code == 200:
-        # Convert the JSON response to a Python dictionary
-        data = response.json()
-        return data
-    else:
-        return "Error: Unable to fetch the data."
+def fetch_data(api_key):
+    # Construct the URL with the provided API key
+    url = f"https://api.example.com/data?api_key={api_key}"
 
-trending_gifs = fetch_trending_gifs()
-print(trending_gifs)
+    # Send a GET request to the URL
+    response = requests.get(url)
+
+    # Check if the request was successful
+    if response.status_code == 200:
+        # Parse the JSON response and return it
+        return response.json()
+    else:
+        # Return a message or handle errors as needed
+        return {"error": "Failed to fetch data", "status_code": response.status_code}
