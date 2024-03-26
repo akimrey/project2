@@ -1,17 +1,17 @@
 import requests
 
-# Your API URL with the key and parameters included
-api_url = "https://api.giphy.com/v1/gifs/trending?api_key=fwmPVjyOZsVvHGKarGwKb81LeaQOFqga&limit=25&offset=0&rating=g"
+def fetch_data(api_key):
+    # Construct the URL with the provided API key
+    url = f"https://api.example.com/data?api_key={api_key}"
 
-def fetch_trending_gifs():
-    response = requests.get(api_url)
+    # Send a GET request to the URL
+    response = requests.get(url)
+
+    # Check if the request was successful
     if response.status_code == 200:
-        # Convert the JSON response to a Python dictionary
-        data = response.json()
-        return data
+        # Parse the JSON response and return it
+        return response.json()
     else:
-        return "Error: Unable to fetch the data."
+        # Return a message or handle errors as needed
+        return {"error": "Failed to fetch data", "status_code": response.status_code}
 
-# Fetch trending GIFs
-trending_gifs = fetch_trending_gifs()
-print(trending_gifs)
