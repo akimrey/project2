@@ -1,5 +1,3 @@
-import requests
-
 def fetch_data(api_key):
     # Construct the URL with the provided API key
     url = f"https://api.example.com/data?api_key={api_key}"
@@ -14,3 +12,4 @@ def fetch_data(api_key):
     else:
         # Return a message or handle errors as needed
         return {"error": "Failed to fetch data", "status_code": response.status_code}
+
