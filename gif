@@ -1,4 +1,4 @@
 #!/bin/bash
 
 poetry run python gif.py "$@"
-# Got from ChatCPT
+# got help from chatgpt
