@@ -9,7 +9,7 @@ class GiphyAPI:
         if not self.api_key:
             raise ValueError("GIPHY_API_KEY environment variable not set.")
 
-    def get_TrendingGifs(self):
+    def get_trending_gifs(self):
         result = requests.get(
             f"https://api.giphy.com/v1/gifs/trending?api_key={self.api_key}&limit=25&offset=0&rating=g"
         )
