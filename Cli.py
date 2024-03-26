@@ -54,6 +54,7 @@ class GiphyCLI:
 
         
     @gif.command()
+    # set count to 5 by default if not specified
     @click.option("--count", default = 5 , help = "Number of gifs to print.")
     @click.option(
         "--markdown",
@@ -70,6 +71,7 @@ class GiphyCLI:
         help="Prints a random gif",
     )
     @click.argument("searchTerm")
+    # params for command
     def search(count, markdown, lucky, searchterm):
         print("search subcommand called.")
         giphy_api = GiphyAPI()

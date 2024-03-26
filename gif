@@ -2,3 +2,5 @@
 
 poetry run python gif.py "$@"
 # got help from chatgpt
+
+# added path to my zshrc file
