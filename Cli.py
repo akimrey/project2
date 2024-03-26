@@ -28,11 +28,11 @@ class GiphyCLI:
     def trending(count, markdown, lucky):
         print("trending subcommand called.")
         giphy_api = GiphyAPI()
-        gifs = giphy_api.get_trending_gifs()  # Assuming the corrected method name
+        gifs = giphy_api.get_trending_gifs() 
 
         if lucky:
             # Directly choosing a random gif from the list
-            random_gif = random.choice(gifs['data'])  # Corrected variable name
+            random_gif = random.choice(gifs['data']) 
             url = random_gif["url"]  # Assuming this is the correct key
             md_url = random_gif["images"]["original"]['url']
             title = random_gif.get("title", "No title")
