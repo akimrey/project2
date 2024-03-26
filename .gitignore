@@ -1,0 +1,4 @@
+__pycache__/
+
+# added cache
+#removed pycache using git rm -r --cached __pycache__/
